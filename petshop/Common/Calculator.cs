@@ -12,7 +12,7 @@ namespace petshop.Common
 
         public int Sum(params int[] values)
         {
-            return values.Count();
+            return values.Sum();
         }
     }
 }
