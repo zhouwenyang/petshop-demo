@@ -1,0 +1,10 @@
+version: "3"
+services:
+    petshop:
+        image: zhouwenyang/petshop:%{Build.BuildId}%
+        environment:
+            - ASPNETCORE_ENVIRONMENT=#{ASPNETCORE_ENVIRONMENT}#
+            - TZ=Asia/Shanghai
+        restart: always
+        ports:
+            - 8080:80
