@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petshop
+spec:
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: petshop
+  template:
+    metadata:
+      labels:
+        app: petshop
+    spec:
+      containers:
+      - image: zhouwenyang/petshop:1.0.1
+        name: petshop
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
+      restartPolicy: Always
