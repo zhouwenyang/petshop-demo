@@ -14,7 +14,7 @@ spec:
         app: petshop
     spec:
       containers:
-      - image: https://cieapp.azurecr.io/zhongyi-cie:latest
+      - image: cieapp.azurecr.io/zhongyi-cie:latest
         name: petshop
         ports:
         - containerPort: 8080
