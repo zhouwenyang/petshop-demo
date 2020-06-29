@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petshop
+  namespace: cie
+spec:
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: petshop
+  template:
+    metadata:
+      labels:
+        app: petshop
+    spec:
+      containers:
+      - image: https://cieapp.azurecr.io/zhongyi-cie:latest
+        name: petshop
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred
+      restartPolicy: Always
