@@ -4,7 +4,7 @@ metadata:
   name: petshop
   namespace: cie
 spec:
-  replicas: 1
+  replicas: 3
   selector: 
     matchLabels:
       app: petshop
@@ -17,7 +17,7 @@ spec:
       - image: cieapp.azurecr.io/zhongyi-cie:latest
         name: petshop
         ports:
-        - containerPort: 8080
+        - containerPort: 80
       imagePullSecrets:
       - name: regcred
       restartPolicy: Always
