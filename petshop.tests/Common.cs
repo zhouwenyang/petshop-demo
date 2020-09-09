@@ -11,7 +11,7 @@ namespace Tests
             
             petshop.Common.Calculator calc = new petshop.Common.Calculator();
             var result = calc.Sum(4, 5, 6);
-            Assert.AreEqual(result, 15);
+            Assert.AreEqual(15,result);
         }
     }
 }
