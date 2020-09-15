@@ -1,0 +1,1 @@
+alter table Customers drop column City
