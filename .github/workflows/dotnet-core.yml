@@ -27,4 +27,4 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
 
     - name: Publish
-      run: dotnet publish --configuration Release --output outpath --no-restore --verbosity normal
+      run: dotnet publish petshop/petshop.csproj --configuration Release --output outpath --no-restore --verbosity normal
