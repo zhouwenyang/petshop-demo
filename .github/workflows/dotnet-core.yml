@@ -25,3 +25,6 @@ jobs:
       
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+
+    - name: Publish
+      run: dotnet publish --configuration Release --no-restore --verbosity normal
