@@ -33,3 +33,11 @@ jobs:
       with:
        name: upload artifact
        path: petshop/outpath/ # or path/to/artifact
+      # Deploy to Azure Web apps
+        
+    - name: 'Run Azure webapp deploy action using publish profile credentials'
+      uses: azure/webapps-deploy@v2
+      with: 
+        app-name: cie-demo-web # Replace with your app name
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
+        package: 'petshop/outpath'
