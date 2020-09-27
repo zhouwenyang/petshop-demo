@@ -28,3 +28,8 @@ jobs:
 
     - name: Publish
       run: dotnet publish petshop/petshop.csproj --configuration Release --output outpath --no-restore --verbosity normal
+
+    - uses: actions/upload-artifact@v2
+      with:
+       name: upload artifact
+       path: petshop/outpath/ # or path/to/artifact
