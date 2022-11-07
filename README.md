@@ -1,6 +1,6 @@
 # petshop
 
-- Sonar:
+- Sonar:test
 
 # 特性
 
