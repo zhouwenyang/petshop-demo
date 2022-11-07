@@ -1,6 +1,6 @@
 # petshop
 
-- Sonar:3333
+- Sonar:
 
 # 特性
 
