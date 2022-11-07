@@ -1,4 +1,4 @@
-CREATE TABLE Customers01
+CREATE TABLE Customers02
 (
     Id int,
     LastName varchar(255),
